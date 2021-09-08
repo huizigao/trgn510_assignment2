@@ -1,4 +1,4 @@
 #!/bin/bash
-a= $(expr $1 * $2)
-b=$( 235.15 + a )
+a=$(expr $1 \* $2)
+b=`echo $a + 273.15 | bc`
 echo $b
